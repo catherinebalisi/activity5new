@@ -1,0 +1,325 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.cath {
+    position: relative;
+    background: #eff4fd;
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo {
+    width: 120px;
+    padding-left: 30px;
+    
+}
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-right:0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eff4fd;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+   
+
+}
+
+nav ul li a{
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    font-family: christmas and santona;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: #ffd700;
+}
+.content{
+    padding:15%;
+    margin-bottom: 2px;
+   
+}
+.content h1{
+    font-family: christmas and santona;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 3px;
+}
+.let {
+    font-family: arial black;
+    margin-top: 0;
+
+}
+ span{
+    color: goldenrod;
+    font-family: christmas and santona;
+ }
+.content a{
+    background: goldenrod;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffff;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.content a:hover{
+    background: rgb(20, 20, 19);
+    transition: 0.5s;
+}
+
+
+.images{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    bottom: 5%;
+    right: 100px;
+    display: flex;
+
+}
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    display: flex;
+}
+.images:hover .circle{
+    bottom: 40px;
+}
+.images:hover .prof{
+    left: 45%;
+}
+/* -----------about me--------- */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.about {
+    width:100%;
+    padding: 100px 0px;
+    background-color: goldenrod;
+    height: 100vh;
+}
+
+.about img{
+    height: 550px;
+    width:350px;
+    margin-left: 20%;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+#about{
+    font-size: 50px;
+    font-family: Christmas and Santona;
+    padding: 10px;
+}
+
+#Sooner {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ----------- WORK------------ */
+.my {
+    left: 50%;
+    margin: 0px;
+    font-family: christmas and santona;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 50px;
+
+}
+.work {
+    display:flex;
+    position: static;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background: #eff4fd; 
+}
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 10px 0px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+.container .box {
+    background:#eff4fd;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.container .box:hover {
+    background: goldenrod;  
+}
+.container .box img {
+  position: relative;
+  max-width: 550px;
+  margin-bottom: 5px;   
+}
+.container .box:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 1;
+    
+
+}
+
+.container .box:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 1;
+    background: goldenrod;
+
+}
+.container .box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 1;
+   
+
+}
+.container .box:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 1;    
+
+}
+.container .box:nth-child(5) {
+    grid-column: span 3;
+    grid-row:span 1;
+    background: goldenrod;
+
+}
+.container .box:nth-child(6) {
+    grid-column: span 3;
+    grid-row:span 1;
+    background: goldenrod;
+
+}
+
+/* hobbies */
+
+.myhob {
+    left: 50%;
+    margin: 0px;
+    font-family: christmas and santona;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 50px;
+
+}
+
+.hob {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box; 
+}
+.hob img {
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+
+}
+
+/* contact  */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:#fadf47;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+.cont {
+    left: 50%;
+    margin: 0px;
+    font-family: christmas and santona;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 50px;
+}
+
+.form {
+    display: flex;    
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input {
+    padding: 12px;
+    margin: 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+#msg {
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send {
+    padding: 10px;
+    width: 100px;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+
+}
+
+.footer {
+    font-family: christmas and santona;
+    text-align: center;
+}
